@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Duru+Sans&family=Exo:wght@500;700&family=Rubik&display=swap');
+
+:root {
+    --headingfont: 'Exo';
+    --paragraphfont: 'Rubik';
+
+    --primary: #222F4E;
+    --secondary: #B90000;
+    --surface: #AAAAAA;
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%; /* 1 rem = 10px */
@@ -5,6 +16,12 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+body {
+    font-family: var(--paragraphfont);
+    font-size: 1.6rem;
+    line-height: 1;
 }
 
 /** Global **/
@@ -19,7 +36,7 @@ a {
 }
 
 h1, h2, h3 {
-    font-family: var(--fuenteHeading);
+    font-family: var(--headingfont);
 }
 
 h1 {
