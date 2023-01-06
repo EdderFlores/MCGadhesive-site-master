@@ -74,14 +74,28 @@ img {
     align-items: center;
 }
 
+.button {
+    background-color: var(--secondary);
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: .45rem;
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+
+.button:hover {
+
+}
+
 /** Social media top header**/
 .contact_info {
     background-color: var(--primary);
-    height: 8rem;
+    height: 5rem;
     padding: 25px;
     color: white;
 }
-
 
 @media (min-width: 375px){
     .contact_info {
@@ -91,10 +105,14 @@ img {
     }
 }
 
-.icon {
+.icon_holder {
     display: flex;
-    gap: 2rem;
+    gap: 2.3rem;
+}
+
+.icon {
     font-size: 1.5rem;
+    text-align: center;
     color: var(--white);
 }
 
@@ -141,18 +159,26 @@ img {
     color: var(--white);
 }
 
-/** Header **/
-.header {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
-    url(../img/adhesivemelter.jpeg);
-    height: 50rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    padding: 25px;
+.button_nav {
+    margin-top: 9px;
+    padding: 8px;
 }
 
-@media (min-width: 760px) {
+/** Header **/
+@media (max-width: 2560px) {
+    .header {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 0)),
+        url(../img/adhesivemelter.jpeg);
+        height: 50rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-top: 50px;
+    }
+}
+
+
+@media (min-width: 700px) {
     .header_container {
         display: flex;
         justify-content: space-between;
@@ -160,5 +186,23 @@ img {
         padding-top: 15rem;
         color: white;
     }
+    .header_text {
+        margin: 0 auto;
+        padding-left: 15rem;
+    }
 }
 
+.header_container {
+    color: white;
+    padding-top: 7rem;
+}
+
+.header_text {
+    padding-top: 25px;
+}
+
+
+.button_header {
+    margin-top: 15px;
+    padding: 15px;
+}
